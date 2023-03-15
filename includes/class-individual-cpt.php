@@ -210,7 +210,7 @@ class SOF_People_Individual_CPT {
 			],
 
 			// Defaults.
-			'menu_icon' => 'dashicons-groups',
+			'menu_icon' => 'dashicons-admin-users',
 			'description' => __( 'Individuals on the Spirit of Football website.', 'sof-people' ),
 			'public' => true,
 			'publicly_queryable' => true,
