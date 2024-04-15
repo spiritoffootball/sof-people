@@ -24,7 +24,7 @@ class SOF_People_Individual_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var SOF_People
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class SOF_People_Individual_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var SOF_People_Individual
 	 */
 	public $individual;
 
@@ -102,7 +102,7 @@ class SOF_People_Individual_CPT {
 
 		// Store references.
 		$this->individual = $parent;
-		$this->plugin = $parent->plugin;
+		$this->plugin     = $parent->plugin;
 
 		// Init when this plugin is loaded.
 		add_action( 'sof_people/individual/loaded', [ $this, 'register_hooks' ] );
@@ -194,7 +194,7 @@ class SOF_People_Individual_CPT {
 		$args = [
 
 			// Labels.
-			'labels' => [
+			'labels'              => [
 				'name'               => __( 'Individuals', 'sof-people' ),
 				'singular_name'      => __( 'Individual', 'sof-people' ),
 				'add_new'            => __( 'Add New', 'sof-people' ),
@@ -210,30 +210,30 @@ class SOF_People_Individual_CPT {
 			],
 
 			// Defaults.
-			'menu_icon' => 'dashicons-admin-users',
-			'description' => __( 'Individuals on the Spirit of Football website.', 'sof-people' ),
-			'public' => true,
-			'publicly_queryable' => true,
+			'menu_icon'           => 'dashicons-admin-users',
+			'description'         => __( 'Individuals on the Spirit of Football website.', 'sof-people' ),
+			'public'              => true,
+			'publicly_queryable'  => true,
 			'exclude_from_search' => false,
-			'show_ui' => true,
-			'show_in_nav_menus' => true,
-			'show_in_menu' => true,
-			'show_in_admin_bar' => true,
-			'has_archive' => true,
-			'query_var' => true,
-			'capability_type' => 'post',
-			'hierarchical' => false,
-			'menu_position' => 20,
-			'map_meta_cap' => true,
+			'show_ui'             => true,
+			'show_in_nav_menus'   => true,
+			'show_in_menu'        => true,
+			'show_in_admin_bar'   => true,
+			'has_archive'         => true,
+			'query_var'           => true,
+			'capability_type'     => 'post',
+			'hierarchical'        => false,
+			'menu_position'       => 20,
+			'map_meta_cap'        => true,
 
 			// Rewrite.
-			'rewrite' => [
-				'slug' => 'people',
+			'rewrite'             => [
+				'slug'       => 'people',
 				'with_front' => false,
 			],
 
 			// Supports.
-			'supports' => [
+			'supports'            => [
 				'title',
 				'editor',
 				'excerpt',
@@ -241,8 +241,8 @@ class SOF_People_Individual_CPT {
 			],
 
 			// REST setup.
-			'show_in_rest' => true,
-			'rest_base' => $this->post_type_rest_base,
+			'show_in_rest'        => true,
+			'rest_base'           => $this->post_type_rest_base,
 
 		];
 
@@ -271,23 +271,23 @@ class SOF_People_Individual_CPT {
 		$messages[ $this->post_type_name ] = [
 
 			// Unused - messages start at index 1.
-			0 => '',
+			0  => '',
 
 			// Item updated.
-			1 => sprintf(
+			1  => sprintf(
 				/* translators: %s: The permalink. */
 				__( 'Individual updated. <a href="%s">View Individual</a>', 'sof-people' ),
 				esc_url( get_permalink( $post_ID ) )
 			),
 
 			// Custom fields.
-			2 => __( 'Custom field updated.', 'sof-people' ),
-			3 => __( 'Custom field deleted.', 'sof-people' ),
-			4 => __( 'Individual updated.', 'sof-people' ),
+			2  => __( 'Custom field updated.', 'sof-people' ),
+			3  => __( 'Custom field deleted.', 'sof-people' ),
+			4  => __( 'Individual updated.', 'sof-people' ),
 
 			// Item restored to a revision.
 			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
-			5 => isset( $_GET['revision'] ) ?
+			5  => isset( $_GET['revision'] ) ?
 
 				// Revision text.
 				sprintf(
@@ -301,24 +301,24 @@ class SOF_People_Individual_CPT {
 				false,
 
 			// Item published.
-			6 => sprintf(
+			6  => sprintf(
 				/* translators: %s: The permalink. */
 				__( 'Individual published. <a href="%s">View Individual</a>', 'sof-people' ),
 				esc_url( get_permalink( $post_ID ) )
 			),
 
 			// Item saved.
-			7 => __( 'Individual saved.', 'sof-people' ),
+			7  => __( 'Individual saved.', 'sof-people' ),
 
 			// Item submitted.
-			8 => sprintf(
+			8  => sprintf(
 				/* translators: %s: The permalink. */
 				__( 'Individual submitted. <a target="_blank" href="%s">Preview Individual</a>', 'sof-people' ),
 				esc_url( add_query_arg( 'preview', 'true', get_permalink( $post_ID ) ) )
 			),
 
 			// Item scheduled.
-			9 => sprintf(
+			9  => sprintf(
 				/* translators: 1: The date, 2: The permalink. */
 				__( 'Individual scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview Individual</a>', 'sof-people' ),
 				/* translators: Publish box date format - see https://php.net/date */
@@ -351,7 +351,7 @@ class SOF_People_Individual_CPT {
 	public function post_type_title( $title ) {
 
 		// Bail if not our post type.
-		if ( $this->post_type_name !== get_post_type() ) {
+		if ( get_post_type() !== $this->post_type_name ) {
 			return $title;
 		}
 
@@ -382,10 +382,10 @@ class SOF_People_Individual_CPT {
 		$args = [
 
 			// Same as "category".
-			'hierarchical' => true,
+			'hierarchical'      => true,
 
 			// Labels.
-			'labels' => [
+			'labels'            => [
 				'name'              => _x( 'Individual Types', 'taxonomy general name', 'sof-people' ),
 				'singular_name'     => _x( 'Individual Type', 'taxonomy singular name', 'sof-people' ),
 				'search_items'      => __( 'Search Individual Types', 'sof-people' ),
@@ -401,17 +401,17 @@ class SOF_People_Individual_CPT {
 			],
 
 			// Rewrite rules.
-			'rewrite' => [
+			'rewrite'           => [
 				'slug' => 'people/types',
 			],
 
 			// Show column in wp-admin.
 			'show_admin_column' => true,
-			'show_ui' => true,
+			'show_ui'           => true,
 
 			// REST setup.
-			'show_in_rest' => true,
-			'rest_base' => $this->taxonomy_rest_base,
+			'show_in_rest'      => true,
+			'rest_base'         => $this->taxonomy_rest_base,
 
 		];
 
@@ -431,7 +431,7 @@ class SOF_People_Individual_CPT {
 	 * @since 1.0.0
 	 *
 	 * @param array $args The existing arguments.
-	 * @param int $post_id The WordPress post ID.
+	 * @param int   $post_id The WordPress post ID.
 	 */
 	public function taxonomy_fix_metabox( $args, $post_id ) {
 
@@ -459,27 +459,30 @@ class SOF_People_Individual_CPT {
 		global $typenow;
 
 		// Bail if not our post type.
-		if ( $typenow != $this->post_type_name ) {
+		if ( $typenow !== $this->post_type_name ) {
 			return;
 		}
 
 		// Get tax object.
 		$taxonomy = get_taxonomy( $this->taxonomy_name );
 
-		// Show a dropdown.
-		wp_dropdown_categories( [
+		// Build args.
+		$args = [
 			/* translators: %s: The plural name of the taxonomy terms. */
 			'show_option_all' => sprintf( __( 'Show All %s', 'sof-people' ), $taxonomy->label ),
-			'taxonomy' => $this->taxonomy_name,
-			'name' => $this->taxonomy_name,
-			'orderby' => 'name',
+			'taxonomy'        => $this->taxonomy_name,
+			'name'            => $this->taxonomy_name,
+			'orderby'         => 'name',
 			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Recommended
-			'selected' => isset( $_GET[ $this->taxonomy_name ] ) ? wp_unslash( $_GET[ $this->taxonomy_name ] ) : '',
-			'show_count' => true,
-			'hide_empty' => true,
-			'value_field' => 'slug',
-			'hierarchical' => 1,
-		] );
+			'selected'        => isset( $_GET[ $this->taxonomy_name ] ) ? wp_unslash( $_GET[ $this->taxonomy_name ] ) : '',
+			'show_count'      => true,
+			'hide_empty'      => true,
+			'value_field'     => 'slug',
+			'hierarchical'    => 1,
+		];
+
+		// Show a dropdown.
+		wp_dropdown_categories( $args );
 
 	}
 
@@ -502,11 +505,11 @@ class SOF_People_Individual_CPT {
 		$args = [
 
 			// General.
-			'public' => true,
-			'hierarchical' => false,
+			'public'            => true,
+			'hierarchical'      => false,
 
 			// Labels.
-			'labels' => [
+			'labels'            => [
 				'name'                       => _x( 'Individual Tags', 'taxonomy general name', 'sof-people' ),
 				'singular_name'              => _x( 'Individual Tag', 'taxonomy singular name', 'sof-people' ),
 				'menu_name'                  => __( 'Individual Tags', 'sof-people' ),
@@ -524,17 +527,17 @@ class SOF_People_Individual_CPT {
 			],
 
 			// Rewrite rules.
-			'rewrite' => [
+			'rewrite'           => [
 				'slug' => 'people/tags',
 			],
 
 			// Show column in wp-admin.
 			'show_admin_column' => true,
-			'show_ui' => true,
+			'show_ui'           => true,
 
 			// REST setup.
-			'show_in_rest' => true,
-			'rest_base' => $this->taxonomy_free_rest_base,
+			'show_in_rest'      => true,
+			'rest_base'         => $this->taxonomy_free_rest_base,
 
 		];
 

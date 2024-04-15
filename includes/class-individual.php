@@ -24,7 +24,7 @@ class SOF_People_Individual {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var SOF_People
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class SOF_People_Individual {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var SOF_People_Individual_CPT
 	 */
 	public $cpt;
 

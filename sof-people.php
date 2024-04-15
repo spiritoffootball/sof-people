@@ -1,14 +1,16 @@
 <?php
 /**
- * Plugin Name: SOF People
- * Plugin URI: https://github.com/spiritoffootball/sof-people
+ * SOF People
+ *
+ * Plugin Name:       SOF People
+ * Description:       Provides Custom Post Types for displaying people on the Spirit of Football website.
+ * Plugin URI:        https://github.com/spiritoffootball/sof-people
  * GitHub Plugin URI: https://github.com/spiritoffootball/sof-people
- * Description: Provides Custom Post Types for displaying people on the Spirit of Football website.
- * Author: Christian Wach
- * Version: 1.0.0a
- * Author URI: https://haystack.co.uk
- * Text Domain: sof-people
- * Domain Path: /languages
+ * Version:           1.0.0a
+ * Author:            Christian Wach
+ * Author URI:        https://haystack.co.uk
+ * Text Domain:       sof-people
+ * Domain Path:       /languages
  *
  * @package SOF_People
  */
@@ -47,7 +49,7 @@ class SOF_People {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var SOF_People_Individual
 	 */
 	public $individual;
 
@@ -72,7 +74,7 @@ class SOF_People {
 
 		// Only do this once.
 		static $done;
-		if ( isset( $done ) && $done === true ) {
+		if ( isset( $done ) && true === $done ) {
 			return;
 		}
 
@@ -173,8 +175,6 @@ class SOF_People {
 	}
 
 }
-
-
 
 /**
  * Utility to get a reference to this plugin.
