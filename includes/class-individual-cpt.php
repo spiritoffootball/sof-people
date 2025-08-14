@@ -105,7 +105,35 @@ class SOF_People_Individual_CPT {
 		$this->plugin     = $parent->plugin;
 
 		// Init when this plugin is loaded.
-		add_action( 'sof_people/individual/loaded', [ $this, 'register_hooks' ] );
+		add_action( 'sof_people/individual/loaded', [ $this, 'initialise' ] );
+
+	}
+
+	/**
+	 * Initialises this class.
+	 *
+	 * @since 1.0.1
+	 */
+	public function initialise() {
+
+		// Only do this once.
+		static $done;
+		if ( isset( $done ) && true === $done ) {
+			return;
+		}
+
+		// Bootstrap object.
+		$this->register_hooks();
+
+		/**
+		 * Fires when this class is loaded.
+		 *
+		 * @since 1.0.1
+		 */
+		do_action( 'sof_people/individual/cpt/loaded' );
+
+		// We're done.
+		$done = true;
 
 	}
 
@@ -114,7 +142,7 @@ class SOF_People_Individual_CPT {
 	 *
 	 * @since 1.0.0
 	 */
-	public function register_hooks() {
+	private function register_hooks() {
 
 		// Activation and deactivation.
 		add_action( 'sof_people/activate', [ $this, 'activate' ] );
