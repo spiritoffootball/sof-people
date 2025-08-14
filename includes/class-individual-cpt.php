@@ -96,7 +96,7 @@ class SOF_People_Individual_CPT {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param object $parent The parent object.
+	 * @param SOF_People_Individual $parent The parent object.
 	 */
 	public function __construct( $parent ) {
 
@@ -110,7 +110,7 @@ class SOF_People_Individual_CPT {
 	}
 
 	/**
-	 * Register WordPress hooks.
+	 * Registers hook callbacks.
 	 *
 	 * @since 1.0.0
 	 */

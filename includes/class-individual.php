@@ -42,7 +42,7 @@ class SOF_People_Individual {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param object $parent The parent object.
+	 * @param SOF_People $parent The parent object.
 	 */
 	public function __construct( $parent ) {
 
@@ -61,38 +61,47 @@ class SOF_People_Individual {
 	 */
 	public function initialise() {
 
+		// Only do this once.
+		static $done;
+		if ( isset( $done ) && true === $done ) {
+			return;
+		}
+
 		// Bootstrap object.
 		$this->include_files();
 		$this->setup_objects();
 		$this->register_hooks();
 
 		/**
-		 * Broadcast that this class is now loaded.
+		 * Fires when this class is loaded.
 		 *
 		 * @since 1.0.0
 		 */
 		do_action( 'sof_people/individual/loaded' );
 
+		// We're done.
+		$done = true;
+
 	}
 
 	/**
-	 * Include files.
+	 * Includes required files.
 	 *
 	 * @since 1.0.0
 	 */
-	public function include_files() {
+	private function include_files() {
 
 		// Include class files.
-		include SOF_PEOPLE_PATH . 'includes/class-individual-cpt.php';
+		require SOF_PEOPLE_PATH . 'includes/class-individual-cpt.php';
 
 	}
 
 	/**
-	 * Set up this plugin's objects.
+	 * Sets up this plugin's objects.
 	 *
 	 * @since 1.0.0
 	 */
-	public function setup_objects() {
+	private function setup_objects() {
 
 		// Init objects.
 		$this->cpt = new SOF_People_Individual_CPT( $this );
@@ -100,11 +109,11 @@ class SOF_People_Individual {
 	}
 
 	/**
-	 * Register WordPress hooks.
+	 * Registers hook callbacks.
 	 *
 	 * @since 1.0.0
 	 */
-	public function register_hooks() {
+	private function register_hooks() {
 
 	}
 
