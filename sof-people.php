@@ -45,7 +45,7 @@ if ( ! defined( 'SOF_PEOPLE_PATH' ) ) {
 class SOF_People {
 
 	/**
-	 * Individual loader.
+	 * Individual loader class.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -66,7 +66,7 @@ class SOF_People {
 	}
 
 	/**
-	 * Do stuff on plugin init.
+	 * Initialises this plugin.
 	 *
 	 * @since 1.0.0
 	 */
@@ -79,12 +79,12 @@ class SOF_People {
 		}
 
 		// Bootstrap plugin.
-		$this->translation();
 		$this->include_files();
 		$this->setup_objects();
+		$this->register_hooks();
 
 		/**
-		 * Broadcast that this plugin is now loaded.
+		 * Fires when this plugin is loaded.
 		 *
 		 * @since 1.0.0
 		 */
@@ -96,7 +96,43 @@ class SOF_People {
 	}
 
 	/**
-	 * Enable translation.
+	 * Includes required files.
+	 *
+	 * @since 1.0.0
+	 */
+	private function include_files() {
+
+		// Include class files.
+		require SOF_PEOPLE_PATH . 'includes/class-individual.php';
+
+	}
+
+	/**
+	 * Sets up this plugin's objects.
+	 *
+	 * @since 1.0.0
+	 */
+	private function setup_objects() {
+
+		// Init objects.
+		$this->individual = new SOF_People_Individual( $this );
+
+	}
+
+	/**
+	 * Registers hook callbacks.
+	 *
+	 * @since 1.0.1
+	 */
+	private function register_hooks() {
+
+		// Use translation.
+		add_action( 'init', [ $this, 'translation' ] );
+
+	}
+
+	/**
+	 * Enables translation.
 	 *
 	 * @since 1.0.0
 	 */
@@ -113,31 +149,7 @@ class SOF_People {
 	}
 
 	/**
-	 * Include files.
-	 *
-	 * @since 1.0.0
-	 */
-	public function include_files() {
-
-		// Include class files.
-		include SOF_PEOPLE_PATH . 'includes/class-individual.php';
-
-	}
-
-	/**
-	 * Set up this plugin's objects.
-	 *
-	 * @since 1.0.0
-	 */
-	public function setup_objects() {
-
-		// Init objects.
-		$this->individual = new SOF_People_Individual( $this );
-
-	}
-
-	/**
-	 * Perform plugin activation tasks.
+	 * Performs plugin activation tasks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -156,7 +168,7 @@ class SOF_People {
 	}
 
 	/**
-	 * Perform plugin deactivation tasks.
+	 * Performs plugin deactivation tasks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -177,7 +189,7 @@ class SOF_People {
 }
 
 /**
- * Utility to get a reference to this plugin.
+ * Gets a reference to this plugin.
  *
  * @since 1.0.0
  *
