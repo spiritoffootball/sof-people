@@ -1,17 +1,17 @@
-# Copyright (C) 2024 Christian Wach
+# Copyright (C) 2025 Christian Wach
 # This file is distributed under the same license as the SOF People plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: SOF People 1.0.0a\n"
+"Project-Id-Version: SOF People 1.0.1a\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sof-people\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-15T13:48:52+00:00\n"
+"POT-Creation-Date: 2025-08-14T11:06:45+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: sof-people\n"
 
 #. Plugin Name of the plugin
@@ -39,219 +39,226 @@ msgstr ""
 msgid "https://haystack.co.uk"
 msgstr ""
 
-#: includes/class-individual-cpt.php:198
-#: includes/class-individual-cpt.php:209
+#: includes/class-individual-cpt.php:226
+#: includes/class-individual-cpt.php:237
 msgid "Individuals"
 msgstr ""
 
-#: includes/class-individual-cpt.php:199
+#: includes/class-individual-cpt.php:227
 msgid "Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:200
+#: includes/class-individual-cpt.php:228
 msgid "Add New"
 msgstr ""
 
-#: includes/class-individual-cpt.php:201
+#: includes/class-individual-cpt.php:229
 msgid "Add New Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:202
+#: includes/class-individual-cpt.php:230
 msgid "Edit Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:203
+#: includes/class-individual-cpt.php:231
 msgid "New Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:204
+#: includes/class-individual-cpt.php:232
 msgid "All Individuals"
 msgstr ""
 
-#: includes/class-individual-cpt.php:205
+#: includes/class-individual-cpt.php:233
 msgid "View Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:206
+#: includes/class-individual-cpt.php:234
 msgid "Search Individuals"
 msgstr ""
 
-#: includes/class-individual-cpt.php:207
+#: includes/class-individual-cpt.php:235
 msgid "No matching Individual found"
 msgstr ""
 
-#: includes/class-individual-cpt.php:208
+#: includes/class-individual-cpt.php:236
 msgid "No Individuals found in Trash"
 msgstr ""
 
-#: includes/class-individual-cpt.php:214
+#: includes/class-individual-cpt.php:242
 msgid "Individuals on the Spirit of Football website."
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-individual-cpt.php:279
+#: includes/class-individual-cpt.php:307
+#, php-format
 msgid "Individual updated. <a href=\"%s\">View Individual</a>"
 msgstr ""
 
-#: includes/class-individual-cpt.php:284
+#: includes/class-individual-cpt.php:312
 msgid "Custom field updated."
 msgstr ""
 
-#: includes/class-individual-cpt.php:285
+#: includes/class-individual-cpt.php:313
 msgid "Custom field deleted."
 msgstr ""
 
-#: includes/class-individual-cpt.php:286
+#: includes/class-individual-cpt.php:314
 msgid "Individual updated."
 msgstr ""
 
 #. translators: %s: The date and time of the revision.
-#: includes/class-individual-cpt.php:295
+#: includes/class-individual-cpt.php:323
+#, php-format
 msgid "Individual restored to revision from %s"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-individual-cpt.php:306
+#: includes/class-individual-cpt.php:334
+#, php-format
 msgid "Individual published. <a href=\"%s\">View Individual</a>"
 msgstr ""
 
-#: includes/class-individual-cpt.php:311
+#: includes/class-individual-cpt.php:339
 msgid "Individual saved."
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-individual-cpt.php:316
+#: includes/class-individual-cpt.php:344
+#, php-format
 msgid "Individual submitted. <a target=\"_blank\" href=\"%s\">Preview Individual</a>"
 msgstr ""
 
 #. translators: 1: The date, 2: The permalink.
-#: includes/class-individual-cpt.php:323
+#: includes/class-individual-cpt.php:351
+#, php-format
 msgid "Individual scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Individual</a>"
 msgstr ""
 
 #. translators: Publish box date format - see https://php.net/date
-#: includes/class-individual-cpt.php:325
+#: includes/class-individual-cpt.php:353
 msgid "M j, Y @ G:i"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-individual-cpt.php:332
+#: includes/class-individual-cpt.php:360
+#, php-format
 msgid "Individual draft updated. <a target=\"_blank\" href=\"%s\">Preview Individual</a>"
 msgstr ""
 
-#: includes/class-individual-cpt.php:359
+#: includes/class-individual-cpt.php:387
 msgid "Add the first name and last name of the Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:389
+#: includes/class-individual-cpt.php:417
 msgctxt "taxonomy general name"
 msgid "Individual Types"
 msgstr ""
 
-#: includes/class-individual-cpt.php:390
+#: includes/class-individual-cpt.php:418
 msgctxt "taxonomy singular name"
 msgid "Individual Type"
 msgstr ""
 
-#: includes/class-individual-cpt.php:391
+#: includes/class-individual-cpt.php:419
 msgid "Search Individual Types"
 msgstr ""
 
-#: includes/class-individual-cpt.php:392
+#: includes/class-individual-cpt.php:420
 msgid "All Individual Types"
 msgstr ""
 
-#: includes/class-individual-cpt.php:393
+#: includes/class-individual-cpt.php:421
 msgid "Parent Individual Type"
 msgstr ""
 
-#: includes/class-individual-cpt.php:394
+#: includes/class-individual-cpt.php:422
 msgid "Parent Individual Type:"
 msgstr ""
 
-#: includes/class-individual-cpt.php:395
+#: includes/class-individual-cpt.php:423
 msgid "Edit Individual Type"
 msgstr ""
 
-#: includes/class-individual-cpt.php:396
+#: includes/class-individual-cpt.php:424
 msgid "Update Individual Type"
 msgstr ""
 
-#: includes/class-individual-cpt.php:397
+#: includes/class-individual-cpt.php:425
 msgid "Add New Individual Type"
 msgstr ""
 
-#: includes/class-individual-cpt.php:398
+#: includes/class-individual-cpt.php:426
 msgid "New Individual Type Name"
 msgstr ""
 
-#: includes/class-individual-cpt.php:399
+#: includes/class-individual-cpt.php:427
 msgid "Individual Types"
 msgstr ""
 
-#: includes/class-individual-cpt.php:400
+#: includes/class-individual-cpt.php:428
 msgid "No Individual Types found"
 msgstr ""
 
 #. translators: %s: The plural name of the taxonomy terms.
-#: includes/class-individual-cpt.php:472
+#: includes/class-individual-cpt.php:500
+#, php-format
 msgid "Show All %s"
 msgstr ""
 
-#: includes/class-individual-cpt.php:513
+#: includes/class-individual-cpt.php:541
 msgctxt "taxonomy general name"
 msgid "Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:514
+#: includes/class-individual-cpt.php:542
 msgctxt "taxonomy singular name"
 msgid "Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:515
+#: includes/class-individual-cpt.php:543
 msgid "Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:516
+#: includes/class-individual-cpt.php:544
 msgid "Search Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:517
+#: includes/class-individual-cpt.php:545
 msgid "All Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:518
+#: includes/class-individual-cpt.php:546
 msgid "Edit Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:519
+#: includes/class-individual-cpt.php:547
 msgid "Update Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:520
+#: includes/class-individual-cpt.php:548
 msgid "Add New Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:521
+#: includes/class-individual-cpt.php:549
 msgid "New Individual Tag Name"
 msgstr ""
 
-#: includes/class-individual-cpt.php:522
+#: includes/class-individual-cpt.php:550
 msgid "No Individual Tags found"
 msgstr ""
 
-#: includes/class-individual-cpt.php:523
+#: includes/class-individual-cpt.php:551
 msgid "Popular Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:524
+#: includes/class-individual-cpt.php:552
 msgid "Separate Individual Tags with commas"
 msgstr ""
 
-#: includes/class-individual-cpt.php:525
+#: includes/class-individual-cpt.php:553
 msgid "Add or remove Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:526
+#: includes/class-individual-cpt.php:554
 msgid "Choose from the most popular Individual Tags"
 msgstr ""
