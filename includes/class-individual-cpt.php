@@ -218,36 +218,38 @@ class SOF_People_Individual_CPT {
 			return;
 		}
 
+		// Define labels.
+		$labels = [
+			'name'               => __( 'Individuals', 'sof-people' ),
+			'singular_name'      => __( 'Individual', 'sof-people' ),
+			'add_new'            => __( 'Add New', 'sof-people' ),
+			'add_new_item'       => __( 'Add New Individual', 'sof-people' ),
+			'edit_item'          => __( 'Edit Individual', 'sof-people' ),
+			'new_item'           => __( 'New Individual', 'sof-people' ),
+			'all_items'          => __( 'All Individuals', 'sof-people' ),
+			'view_item'          => __( 'View Individual', 'sof-people' ),
+			'search_items'       => __( 'Search Individuals', 'sof-people' ),
+			'not_found'          => __( 'No matching Individual found', 'sof-people' ),
+			'not_found_in_trash' => __( 'No Individuals found in Trash', 'sof-people' ),
+			'menu_name'          => __( 'Individuals', 'sof-people' ),
+		];
+
 		// Create Post Type args.
 		$args = [
 
-			// Labels.
-			'labels'              => [
-				'name'               => __( 'Individuals', 'sof-people' ),
-				'singular_name'      => __( 'Individual', 'sof-people' ),
-				'add_new'            => __( 'Add New', 'sof-people' ),
-				'add_new_item'       => __( 'Add New Individual', 'sof-people' ),
-				'edit_item'          => __( 'Edit Individual', 'sof-people' ),
-				'new_item'           => __( 'New Individual', 'sof-people' ),
-				'all_items'          => __( 'All Individuals', 'sof-people' ),
-				'view_item'          => __( 'View Individual', 'sof-people' ),
-				'search_items'       => __( 'Search Individuals', 'sof-people' ),
-				'not_found'          => __( 'No matching Individual found', 'sof-people' ),
-				'not_found_in_trash' => __( 'No Individuals found in Trash', 'sof-people' ),
-				'menu_name'          => __( 'Individuals', 'sof-people' ),
-			],
+			'labels'              => $labels,
 
 			// Defaults.
 			'menu_icon'           => 'dashicons-admin-users',
 			'description'         => __( 'Individuals on the Spirit of Football website.', 'sof-people' ),
 			'public'              => true,
 			'publicly_queryable'  => true,
-			'exclude_from_search' => false,
+			'exclude_from_search' => true,
 			'show_ui'             => true,
-			'show_in_nav_menus'   => true,
+			'show_in_nav_menus'   => false,
 			'show_in_menu'        => true,
 			'show_in_admin_bar'   => true,
-			'has_archive'         => true,
+			'has_archive'         => false,
 			'query_var'           => true,
 			'capability_type'     => 'post',
 			'hierarchical'        => false,
@@ -263,8 +265,6 @@ class SOF_People_Individual_CPT {
 			// Supports.
 			'supports'            => [
 				'title',
-				'editor',
-				'excerpt',
 				'thumbnail',
 			],
 
