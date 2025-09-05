@@ -443,6 +443,15 @@ class SOF_People_Individual_CPT {
 
 		];
 
+		/**
+		 * Filters the taxonomy configuration arguments.
+		 *
+		 * @since 1.0.2
+		 *
+		 * @param array $args The default taxonomy configuration arguments.
+		 */
+		$args = apply_filters( 'sof_people/cpt/individual/args', $args );
+
 		// Register a taxonomy for this CPT.
 		register_taxonomy( $this->taxonomy_name, $this->post_type_name, $args );
 
