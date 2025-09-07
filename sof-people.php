@@ -4,7 +4,7 @@
  *
  * Plugin Name:       SOF People
  * Description:       Provides Custom Post Types for displaying people on the Spirit of Football website.
- * Version:           1.0.2a
+ * Version:           1.0.2
  * Plugin URI:        https://github.com/spiritoffootball/sof-people
  * GitHub Plugin URI: https://github.com/spiritoffootball/sof-people
  * Author:            Christian Wach
@@ -19,7 +19,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Set our version here.
-define( 'SOF_PEOPLE_VERSION', '1.0.2a' );
+define( 'SOF_PEOPLE_VERSION', '1.0.2' );
 
 // Store reference to this file.
 if ( ! defined( 'SOF_PEOPLE_FILE' ) ) {
