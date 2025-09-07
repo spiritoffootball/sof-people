@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the SOF People plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: SOF People 1.0.1a\n"
+"Project-Id-Version: SOF People 1.0.2a\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sof-people\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-14T11:06:45+00:00\n"
+"POT-Creation-Date: 2025-09-07T11:45:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: sof-people\n"
@@ -39,52 +39,52 @@ msgstr ""
 msgid "https://haystack.co.uk"
 msgstr ""
 
-#: includes/class-individual-cpt.php:226
-#: includes/class-individual-cpt.php:237
+#: includes/class-individual-cpt.php:223
+#: includes/class-individual-cpt.php:234
 msgid "Individuals"
 msgstr ""
 
-#: includes/class-individual-cpt.php:227
+#: includes/class-individual-cpt.php:224
 msgid "Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:228
+#: includes/class-individual-cpt.php:225
 msgid "Add New"
 msgstr ""
 
-#: includes/class-individual-cpt.php:229
+#: includes/class-individual-cpt.php:226
 msgid "Add New Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:230
+#: includes/class-individual-cpt.php:227
 msgid "Edit Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:231
+#: includes/class-individual-cpt.php:228
 msgid "New Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:232
+#: includes/class-individual-cpt.php:229
 msgid "All Individuals"
 msgstr ""
 
-#: includes/class-individual-cpt.php:233
+#: includes/class-individual-cpt.php:230
 msgid "View Individual"
 msgstr ""
 
-#: includes/class-individual-cpt.php:234
+#: includes/class-individual-cpt.php:231
 msgid "Search Individuals"
 msgstr ""
 
-#: includes/class-individual-cpt.php:235
+#: includes/class-individual-cpt.php:232
 msgid "No matching Individual found"
 msgstr ""
 
-#: includes/class-individual-cpt.php:236
+#: includes/class-individual-cpt.php:233
 msgid "No Individuals found in Trash"
 msgstr ""
 
-#: includes/class-individual-cpt.php:242
+#: includes/class-individual-cpt.php:244
 msgid "Individuals on the Spirit of Football website."
 msgstr ""
 
@@ -200,65 +200,65 @@ msgid "No Individual Types found"
 msgstr ""
 
 #. translators: %s: The plural name of the taxonomy terms.
-#: includes/class-individual-cpt.php:500
+#: includes/class-individual-cpt.php:509
 #, php-format
 msgid "Show All %s"
 msgstr ""
 
-#: includes/class-individual-cpt.php:541
+#: includes/class-individual-cpt.php:550
 msgctxt "taxonomy general name"
 msgid "Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:542
+#: includes/class-individual-cpt.php:551
 msgctxt "taxonomy singular name"
 msgid "Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:543
+#: includes/class-individual-cpt.php:552
 msgid "Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:544
+#: includes/class-individual-cpt.php:553
 msgid "Search Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:545
+#: includes/class-individual-cpt.php:554
 msgid "All Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:546
+#: includes/class-individual-cpt.php:555
 msgid "Edit Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:547
+#: includes/class-individual-cpt.php:556
 msgid "Update Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:548
+#: includes/class-individual-cpt.php:557
 msgid "Add New Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:549
+#: includes/class-individual-cpt.php:558
 msgid "New Individual Tag Name"
 msgstr ""
 
-#: includes/class-individual-cpt.php:550
+#: includes/class-individual-cpt.php:559
 msgid "No Individual Tags found"
 msgstr ""
 
-#: includes/class-individual-cpt.php:551
+#: includes/class-individual-cpt.php:560
 msgid "Popular Individual Tags"
 msgstr ""
 
-#: includes/class-individual-cpt.php:552
+#: includes/class-individual-cpt.php:561
 msgid "Separate Individual Tags with commas"
 msgstr ""
 
-#: includes/class-individual-cpt.php:553
+#: includes/class-individual-cpt.php:562
 msgid "Add or remove Individual Tag"
 msgstr ""
 
-#: includes/class-individual-cpt.php:554
+#: includes/class-individual-cpt.php:563
 msgid "Choose from the most popular Individual Tags"
 msgstr ""
