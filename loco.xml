@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="SOF People">
+	<domain name="sof-people">
+		<project name="SOF People" slug="sof-people">
+			<source>
+				<directory>.</directory>
+			</source>
+			<target>
+				<directory>languages</directory>
+			</target>
+			<template>
+				<file>languages/sof-people.pot</file>
+			</template>
+		</project>
+	</domain>
+</bundle>

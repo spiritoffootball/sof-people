@@ -1,0 +1,280 @@
+# Copyright (C) 2025 Christian Wach
+# This file is distributed under the same license as the SOF People plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SOF People 1.0.2a\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sof-people\n"
+"Last-Translator: Christian Wach\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-09-07T11:45:44+00:00\n"
+"PO-Revision-Date: 2025-09-09 11:32+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: sof-people\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.4"
+
+#: includes/class-individual-cpt.php:225
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#: includes/class-individual-cpt.php:226
+msgid "Add New Individual"
+msgstr "Person hinzufügen"
+
+#: includes/class-individual-cpt.php:557
+msgid "Add New Individual Tag"
+msgstr "Schlagwort hinzufügen"
+
+#: includes/class-individual-cpt.php:425
+msgid "Add New Individual Type"
+msgstr "Kategorie hinzufügen"
+
+#: includes/class-individual-cpt.php:562
+msgid "Add or remove Individual Tag"
+msgstr "Schlagwort hinzufügen oder entfernen"
+
+#: includes/class-individual-cpt.php:387
+msgid "Add the first name and last name of the Individual"
+msgstr "Geben Sie den Vor- und Nachnamen der Person ein."
+
+#: includes/class-individual-cpt.php:554
+msgid "All Individual Tags"
+msgstr "Alle Schlagwörter"
+
+#: includes/class-individual-cpt.php:420
+msgid "All Individual Types"
+msgstr "Alle Kategorien"
+
+#: includes/class-individual-cpt.php:229
+msgid "All Individuals"
+msgstr "Alle Personen"
+
+#: includes/class-individual-cpt.php:563
+msgid "Choose from the most popular Individual Tags"
+msgstr "Wählen Sie aus den beliebtesten Schlagwörter aus"
+
+#. Author of the plugin
+#: sof-people.php
+msgid "Christian Wach"
+msgstr "Christian Wach"
+
+#: includes/class-individual-cpt.php:313
+msgid "Custom field deleted."
+msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#: includes/class-individual-cpt.php:312
+msgid "Custom field updated."
+msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#: includes/class-individual-cpt.php:227
+msgid "Edit Individual"
+msgstr "Person bearbeiten"
+
+#: includes/class-individual-cpt.php:555
+msgid "Edit Individual Tag"
+msgstr "Schlagwort bearbeiten"
+
+#: includes/class-individual-cpt.php:423
+msgid "Edit Individual Type"
+msgstr "Kategorie bearbeiten"
+
+#. Plugin URI of the plugin
+#: sof-people.php
+msgid "https://github.com/spiritoffootball/sof-people"
+msgstr "https://github.com/spiritoffootball/sof-people"
+
+#. Author URI of the plugin
+#: sof-people.php
+msgid "https://haystack.co.uk"
+msgstr "https://haystack.co.uk"
+
+#: includes/class-individual-cpt.php:224
+msgid "Individual"
+msgstr "Person"
+
+#. translators: %s: The permalink.
+#: includes/class-individual-cpt.php:360
+#, php-format
+msgid ""
+"Individual draft updated. <a target=\"_blank\" href=\"%s\">Preview "
+"Individual</a>"
+msgstr ""
+"Person Entwurf aktualisiert. <a target=\"_blank\" href=\"%s\">Vorschau "
+"Person</a>"
+
+#. translators: %s: The permalink.
+#: includes/class-individual-cpt.php:334
+#, php-format
+msgid "Individual published. <a href=\"%s\">View Individual</a>"
+msgstr "Person veröffentlicht. <a href=\"%s\">Person ansehen</a>"
+
+#. translators: %s: The date and time of the revision.
+#: includes/class-individual-cpt.php:323
+#, php-format
+msgid "Individual restored to revision from %s"
+msgstr "Person wurde auf die Version aus %s zurückgesetzt."
+
+#: includes/class-individual-cpt.php:339
+msgid "Individual saved."
+msgstr "Person gespeichert."
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/class-individual-cpt.php:351
+#, php-format
+msgid ""
+"Individual scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview Individual</a>"
+msgstr ""
+"Person geplant für: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Vorschau Person</a>"
+
+#. translators: %s: The permalink.
+#: includes/class-individual-cpt.php:344
+#, php-format
+msgid ""
+"Individual submitted. <a target=\"_blank\" href=\"%s\">Preview Individual</a>"
+msgstr ""
+"Person eingereicht. <a target=\"_blank\" href=\"%s\">Vorschau Person</a>"
+
+#: includes/class-individual-cpt.php:552
+msgid "Individual Tags"
+msgstr "Schlagwörter"
+
+#: includes/class-individual-cpt.php:427
+msgid "Individual Types"
+msgstr "Kategorien"
+
+#: includes/class-individual-cpt.php:314
+msgid "Individual updated."
+msgstr "Person aktualisiert."
+
+#. translators: %s: The permalink.
+#: includes/class-individual-cpt.php:307
+#, php-format
+msgid "Individual updated. <a href=\"%s\">View Individual</a>"
+msgstr "Person aktualisiert. <a href=\"%s\">Person ansehen</a>"
+
+#: includes/class-individual-cpt.php:223 includes/class-individual-cpt.php:234
+msgid "Individuals"
+msgstr "Personen"
+
+#: includes/class-individual-cpt.php:244
+msgid "Individuals on the Spirit of Football website."
+msgstr "Personen auf der Spirit of Football-Website."
+
+#. translators: Publish box date format - see https://php.net/date
+#: includes/class-individual-cpt.php:353
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: includes/class-individual-cpt.php:228
+msgid "New Individual"
+msgstr "Neue Person"
+
+#: includes/class-individual-cpt.php:558
+msgid "New Individual Tag Name"
+msgstr "Neuer Schlagwortname"
+
+#: includes/class-individual-cpt.php:426
+msgid "New Individual Type Name"
+msgstr "Neuer Kategoriename"
+
+#: includes/class-individual-cpt.php:559
+msgid "No Individual Tags found"
+msgstr "Keine Schlagwörter gefunden"
+
+#: includes/class-individual-cpt.php:428
+msgid "No Individual Types found"
+msgstr "Keine Kategorien gefunden"
+
+#: includes/class-individual-cpt.php:233
+msgid "No Individuals found in Trash"
+msgstr "Keine Personen im Papierkorb gefunden"
+
+#: includes/class-individual-cpt.php:232
+msgid "No matching Individual found"
+msgstr "Keine passende Person gefunden"
+
+#: includes/class-individual-cpt.php:421
+msgid "Parent Individual Type"
+msgstr "Übergeordnete Kategorie"
+
+#: includes/class-individual-cpt.php:422
+msgid "Parent Individual Type:"
+msgstr "Übergeordnete Kategorie:"
+
+#: includes/class-individual-cpt.php:560
+msgid "Popular Individual Tags"
+msgstr "Beliebte Schlagwörter"
+
+#. Description of the plugin
+#: sof-people.php
+msgid ""
+"Provides Custom Post Types for displaying people on the Spirit of Football "
+"website."
+msgstr ""
+"Stellt benutzerdefinierte Beitragstypen für die Darstellung von Personen auf "
+"der Spirit of Football-Website bereit."
+
+#: includes/class-individual-cpt.php:553
+msgid "Search Individual Tags"
+msgstr "Schlagwörter suchen"
+
+#: includes/class-individual-cpt.php:419
+msgid "Search Individual Types"
+msgstr "Kategorien suchen"
+
+#: includes/class-individual-cpt.php:231
+msgid "Search Individuals"
+msgstr "Personen suchen"
+
+#: includes/class-individual-cpt.php:561
+msgid "Separate Individual Tags with commas"
+msgstr "Schlagwörter mit Kommas trennen"
+
+#. translators: %s: The plural name of the taxonomy terms.
+#: includes/class-individual-cpt.php:509
+#, php-format
+msgid "Show All %s"
+msgstr "Alle %s anzeigen"
+
+#. Plugin Name of the plugin
+#: sof-people.php
+msgid "SOF People"
+msgstr "SOF Personen"
+
+#: includes/class-individual-cpt.php:550
+msgctxt "taxonomy general name"
+msgid "Individual Tags"
+msgstr "Schlagwörter"
+
+#: includes/class-individual-cpt.php:417
+msgctxt "taxonomy general name"
+msgid "Individual Types"
+msgstr "Kategorien"
+
+#: includes/class-individual-cpt.php:551
+msgctxt "taxonomy singular name"
+msgid "Individual Tag"
+msgstr "Schlagwort"
+
+#: includes/class-individual-cpt.php:418
+msgctxt "taxonomy singular name"
+msgid "Individual Type"
+msgstr "Kategorie"
+
+#: includes/class-individual-cpt.php:556
+msgid "Update Individual Tag"
+msgstr "Schlagwort aktualisieren"
+
+#: includes/class-individual-cpt.php:424
+msgid "Update Individual Type"
+msgstr "Kategorie aktualisieren"
+
+#: includes/class-individual-cpt.php:230
+msgid "View Individual"
+msgstr "Person ansehen"
